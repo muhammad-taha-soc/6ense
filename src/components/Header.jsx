@@ -1,0 +1,69 @@
+import React, { useState } from 'react';
+
+export default function Header() {
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setIsOpen(!isOpen);
+    };
+
+    const closeMenu = () => {
+        setIsOpen(false);
+    };
+
+    return (
+        <>
+            <header className="fixed top-6 left-1/2 -translate-x-1/2 w-[90%] max-w-auto mx-auto bg-black text-white z-50 py-3 px-6 flex items-center justify-between rounded-full">
+                <img src="/assets/logo/logo.svg" alt="Logo" className="h-8 w-auto" />
+
+                <div className="md:hidden">
+                    <button
+                        onClick={toggleMenu}
+                        className="focus:outline-none focus-visible:ring-2 focus-visible:ring-white/75 rounded-lg p-1"
+                        aria-label="Toggle menu"
+                    >
+                        {isOpen ? (
+                            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        ) : (
+                            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7" />
+                            </svg>
+                        )}
+                    </button>
+                </div>
+
+                <nav
+                    className={`
+                        absolute md:relative top-full left-0 right-0 mt-2 md:mt-0
+                        md:flex items-center gap-8 
+                        ${isOpen ? 'flex' : 'hidden'} md:flex
+                        ${isOpen ? 'flex-col' : 'flex-row'}
+                        md:flex-row
+                        ${isOpen ? 'bg-black rounded-2xl p-4' : ''}
+                        md:bg-transparent md:p-0
+                    `}
+                >
+                    {['Home', '6sense Technology', 'About', 'FAQ', 'Tutorial'].map((link) => (
+                        <a
+                            key={link}
+                            href={`#${link.toLowerCase()}`}
+                            onClick={closeMenu}  // Add this to close the menu on link click
+                            className="text-base font-inter hover:text-gray-300 md:text-base transition-colors font-medium duration-300 py-2 md:py-0"
+                        >
+                            {link}
+                        </a>
+                    ))}
+                    <button
+                        className="bg-white text-black font-inter py-2 px-5 rounded-full transition-colors duration-300 text-base font-semibold whitespace-nowrap md:text-base md:w-[102px] md:h-[40px]"
+                    >
+                        <a href="#signup" onClick={closeMenu} >
+                            Contact
+                        </a>
+                    </button>
+                </nav>
+            </header>
+        </>
+    );
+}
