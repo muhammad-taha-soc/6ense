@@ -5,11 +5,13 @@ import VenuSection from './components/VenuSection';
 import PreLaunch from './components/PreLaunch';
 import Footer from './components/Footer';
 import ExcitingFeatures from './components/ExcitingFeatures';
+import CouponSection from './components/CouponSection';
 
 function App() {
   return (
     <Layout>
       <Hero />
+      <CouponSection />
       <VenuSection />
       <ExcitingFeatures />
       <PreLaunch />
