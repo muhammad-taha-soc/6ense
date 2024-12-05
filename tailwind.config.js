@@ -6,6 +6,7 @@ export default {
       fontFamily: {
         inter: ["Inter"],
         clash: ["Clash Grotesk"],
+        space: ["Space Grotesk"],
         general: ["General Sans"],
       },
       backgroundImage: {
