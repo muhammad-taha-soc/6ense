@@ -11,7 +11,7 @@ export default function Stats() {
                   <h1 className="lg:text-6xl text-4xl mt-5 font-space font-medium">
                       6ENSE IN NUMBERS
                   </h1>
-                  <div className='flex flex-row flex-wrap items-center justify-between w-full my-8'>
+                  <div className='flex flex-row flex-wrap md:flex-nowrap  items-center justify-between w-full my-8'>
                       {[{ title: '9,63 mld', text: 'token 6OS' }, { title: `7`, text: 'Core Teams' }, { title: `10%`, text: 'Owner token Supply' }, { title: `5 min`, text: 'Market cap' }].map((data, index) => (
                           <div className={`font-inter mr-6 w-full px-8 py-8 bg-[#1C1C1C]`}>
                               <div className={`  text-5xl font-medium font-space`}>{data.title}</div>
