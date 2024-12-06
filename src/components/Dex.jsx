@@ -5,9 +5,9 @@ import Card from './containers/Card'
 
 export default function Dex() {
   return (
-      <section className=" text-white bg-black md:rounded-[64px]">
-          <div className="flex flex-col md:flex-row justify-between md:my-28 md:text-left items-center md:items-center lg:w-[94%] w-full max-w-auto mx-auto">
-              <div className="flex flex-col justify-center md:px-6 md:items-start text-center md:text-left h-[500px] lg:h-[650px] md:w-[65%] p-6  lg:mt-0 sm:p-0">
+      <section className="mt-32 text-white bg-black md:rounded-[64px]">
+          <div className=" md:text-left md:py-28  lg:w-[94%] w-full max-w-auto mx-auto">
+              <div className="md:px-6  text-center md:text-left md:w-full p-6  sm:p-0">
                   <Separator text="6ENSE DEX" variant="light" />
                   <div className='flex flex-row items-center justify-between w-full my-8'>
                       {[{ title: 'Dedicated 6OS Token Supply.', text: '25%' }, { title: `Transaction fees in 6OS that feed the token's liquidity pool.`, text: '1.5%' }].map((data, index) => (
@@ -24,7 +24,12 @@ export default function Dex() {
                       <LinkButton text='Read More' variant='light' />
                       {/* ))} */}
                   </div>
-
+                  <img
+                      src="/assets/img/dex-section.png"
+                      alt="DEX"
+                      className={`w-full sm:w-3/4 md:w-2/3 lg:w-full h-auto mx-auto mt-12`}
+                      loading="lazy"
+                  />
               </div>
           </div>
       </section>

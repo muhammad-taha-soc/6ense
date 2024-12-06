@@ -9,6 +9,7 @@ import CouponSection from './components/CouponSection';
 import About from './components/About';
 import OurProduct from './components/OurProduct';
 import Dex from './components/Dex';
+import Wallet from './components/Wallet';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <About />
       <OurProduct />
       <Dex />
+      <Wallet/>
       <VenuSection />
       <ExcitingFeatures />
       <PreLaunch />

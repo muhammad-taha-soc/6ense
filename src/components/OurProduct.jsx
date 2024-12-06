@@ -5,7 +5,7 @@ import Card from './containers/Card'
 
 export default function OurProduct() {
     return (
-        <section className="flex flex-col md:flex-row justify-between md:my-28 md:text-left items-center md:items-center lg:w-[94%] w-full max-w-auto mx-auto">
+        <section className="flex flex-col md:flex-row justify-between mt-32 md:my-28 md:text-left items-center md:items-center lg:w-[94%] w-full max-w-auto mx-auto">
             <div className="flex flex-col justify-center md:px-6 md:items-start text-center md:text-left h-[500px] lg:h-[650px] md:w-[65%] p-6 mt-16 lg:mt-0 sm:p-0">
                 <Separator text="our product" variant="dark" />
                 <h1 className="lg:text-6xl text-4xl mt-5 font-space font-medium">
