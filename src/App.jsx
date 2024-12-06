@@ -1,15 +1,15 @@
 import './App.css'
 import Layout from './components/Layout';
 import Hero from './components/Hero';
-import VenuSection from './components/VenuSection';
-import PreLaunch from './components/PreLaunch';
 import Footer from './components/Footer';
-import ExcitingFeatures from './components/ExcitingFeatures';
 import CouponSection from './components/CouponSection';
 import About from './components/About';
 import OurProduct from './components/OurProduct';
 import Dex from './components/Dex';
 import Wallet from './components/Wallet';
+import OurPartner from './components/OurPartner';
+import Stats from './components/Stats';
+import Contact from './components/Contact';
 
 function App() {
   return (
@@ -20,9 +20,9 @@ function App() {
       <OurProduct />
       <Dex />
       <Wallet/>
-      <VenuSection />
-      <ExcitingFeatures />
-      <PreLaunch />
+      <Stats />
+      <OurPartner />
+      <Contact />
       <Footer />
     </Layout>
   )
