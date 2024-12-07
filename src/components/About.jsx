@@ -33,7 +33,7 @@ export default function About() {
                         />
                     </div>
                 </div> */}
-                <div className='w-[552px] h-[335px] bg-[#212121]'>
+                <div className='md:w-[552px] md:h-[335px] bg-[#212121]'>
                 </div>
             </div>
         </section>
