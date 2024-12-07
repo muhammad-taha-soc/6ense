@@ -10,6 +10,7 @@ import Wallet from './components/Wallet';
 import OurPartner from './components/OurPartner';
 import Stats from './components/Stats';
 import Contact from './components/Contact';
+import ChatBot from './components/ChatBot';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <Wallet/>
       <Stats />
       <OurPartner />
+      <ChatBot />
       <Contact />
       <Footer />
     </Layout>
