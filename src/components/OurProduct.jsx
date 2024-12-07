@@ -21,7 +21,7 @@ export default function OurProduct() {
                 </div>
                 <p className="lg:text-base  my-6 font-inter font-normal">
                     6ense | 6OS Tokens are ERC-20 utility token fuelling thewhole Plantogroup 6ENSE Ecosystem.<br />Allows users to receive a discount on our platform of real economics of products and as well as allowing them to have priority access to DEX&Dapp implementation with LOWEST commission.                  </p>
-                <div className="flex flex-col sm:flex-row items-center font-medium md:text-base font-inter space-x-2 ">
+                <div className="flex flex-col md:flex-row items-center font-medium md:text-base font-inter space-x-2 ">
                     {/* {['Read Whitepaper', 'View Audit'].map((link) => ( */}
                     <LinkButton text='Buy Now' variant='dark' />
                     {/* ))} */}

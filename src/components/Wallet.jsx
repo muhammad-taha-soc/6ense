@@ -9,7 +9,7 @@ export default function Wallet() {
             <div className=" md:text-left md:py-28  lg:w-[94%] w-full max-w-auto mx-auto">
                 <div className="md:px-6  text-center md:text-left md:w-full p-6  sm:p-0">
                     <Separator text="6ENSE WALLET" variant="dark" />
-                    <div className='flex flex-row items-center justify-between w-full my-8'>
+                    <div className='flex flex-col md:flex-row items-center justify-between w-full my-8'>
                         {[{ title: 'Non Custodial Wallet + DEX', text: 'App.' }, { title: `6ENSE Card Wallet`, text: 'Physic' }].map((data, index) => (
                             <Card title={data.title} text={data.text} variant="light" />
                         ))}
@@ -19,7 +19,7 @@ export default function Wallet() {
                         Note* The secret key to your wallet is an important thing. unlike banking passwords, these keys cannot be recovered and restore.
                         Store them properly.
                     </p>
-                    <div className="flex flex-col sm:flex-row items-center font-medium md:text-base font-inter space-x-2 ">
+                    <div className="flex flex-col md:flex-row items-center font-medium md:text-base font-inter space-x-2 ">
                         <LinkButton text='Read More' variant='dark' />
                     </div>
                     <img
