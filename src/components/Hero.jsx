@@ -3,7 +3,7 @@ import LinkButton from './containers/LinkButton';
 const Hero = () => {
 
     return (
-        <div style={{ backgroundPosition: "-1101px -573px" }} className="bg-background-image bg-cover text-white bg-[#200F36] md:rounded-[64px]">
+        <div className="bg-background-image bg-cover text-white bg-black md:rounded-[64px]">
             <div className="flex flex-col md:flex-row justify-between md:text-left items-center md:items-end lg:w-[94%] w-full max-w-auto mx-auto">
                 <div className="flex flex-col justify-center md:items-start text-center md:text-left h-[500px] lg:h-[650px] md:w-[85%] p-6 mt-16 lg:mt-0 sm:p-0">
                     <h1 className="lg:text-6xl text-4xl mt-5 font-space md:px-6 font-medium">

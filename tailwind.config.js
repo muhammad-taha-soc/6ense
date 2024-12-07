@@ -10,7 +10,7 @@ export default {
         general: ["General Sans"],
       },
       backgroundImage: {
-        "background-image": "url('/assets/img/background.png')",
+        "background-image": "url('/assets/img/hero-background.png')",
         "background-vector": "url('/assets/img/vector-hero-img.png')",
       },
     },

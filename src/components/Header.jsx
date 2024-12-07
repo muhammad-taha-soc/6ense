@@ -58,7 +58,7 @@ export default function Header() {
                     <button
                         className="bg-white text-black font-inter py-2 px-5 rounded-full transition-colors duration-300 text-base font-semibold whitespace-nowrap md:text-base md:w-[102px] md:h-[40px]"
                     >
-                        <a href="#signup" onClick={closeMenu} >
+                        <a href="#contact" onClick={closeMenu} >
                             Contact
                         </a>
                     </button>

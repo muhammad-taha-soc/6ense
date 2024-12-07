@@ -6,19 +6,19 @@ export default function Stats() {
   return (
       <section className="mt-32 text-white bg-black md:rounded-[64px]">
           <div className=" md:text-left md:py-28  lg:w-[94%] w-full max-w-auto mx-auto">
-              <div className="md:px-6  text-center md:text-left md:w-full p-6  sm:p-0">
+              <div className="md:px-6  text-center lg:text-left md:w-full p-6">
                   <Separator text="Stats" variant="light" />
                   <h1 className="lg:text-6xl text-4xl mt-5 font-space font-medium">
                       6ENSE IN NUMBERS
                   </h1>
-                  <div className='flex flex-row flex-wrap md:flex-nowrap  items-center justify-between w-full my-8'>
+                  <div className='flex flex-col lg:flex-row items-center justify-between w-full my-8'>
                       {[{ title: '9,63 mld', text: 'token 6OS' }, { title: `7`, text: 'Core Teams' }, { title: `10%`, text: 'Owner token Supply' }, { title: `5 min`, text: 'Market cap' }].map((data, index) => (
-                          <div className={`font-inter mr-6 w-full px-8 py-8 bg-[#1C1C1C]`}>
-                              <div className={`  text-5xl font-medium font-space`}>{data.title}</div>
+                          <div className={`font-inter mr-2 lg:mr-6 mb-2 lg:mb-0 w-full px-4 lg:px-8 py-4 lg:py-8  bg-[#1C1C1C]`}>
+                              <div className={`text-2xl  lg:text-3xl xl:text-5xl font-medium font-space`}>{data.title}</div>
                               {/* <div className={``}>{data.text}</div> */}
                               <div className={`border-t-2 border-white w-full mt-6`} >
                               </div>
-                                  <div className={`text-white text-base font-inter font-medium  mt-6 before:content-['•'] before:mr-2`}>{data.text}</div>
+                                  <div className={`text-white text-sm xl:text-base font-inter font-medium  mt-6 before:content-['•'] before:mr-2`}>{data.text}</div>
                           </div>
                       ))}
                   </div>

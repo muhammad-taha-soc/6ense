@@ -4,7 +4,7 @@ import Separator from './containers/Separator'
 
 export default function About() {
     return (
-        <section className=" text-white bg-black md:rounded-[64px]">
+        <section id='about' className=" text-white bg-black md:rounded-[64px]">
             <div className="flex flex-col md:flex-row justify-between md:text-left items-center md:items-center lg:w-[94%] w-full max-w-auto mx-auto">
                 <div className="flex flex-col justify-center md:px-6 md:items-start text-center md:text-left h-[500px] lg:h-[650px] md:w-[65%] p-6 mt-16 lg:mt-0 sm:p-0">
                    <Separator text="About" variant="light"/>
@@ -14,7 +14,7 @@ export default function About() {
                     <p className="lg:text-base  my-6 font-inter font-normal">
                         6ENSE is the blockchain ecosystem developed for Plantogroup that integrate real economyes,including CATALYST  Network.
                     </p>
-                    <div className="flex flex-col sm:flex-row items-center font-medium md:text-base font-inter space-x-2 ">
+                    <div className="flex flex-col md:flex-row items-center font-medium md:text-base font-inter space-x-2 ">
                         {['Read Whitepaper', 'View Audit'].map((link) => (
                             <LinkButton text={link} variant='light' />
                         ))}
@@ -33,7 +33,7 @@ export default function About() {
                         />
                     </div>
                 </div> */}
-                <div className='md:w-[552px] md:h-[335px] bg-[#212121]'>
+                <div className='hidden lg:block lg:w-[552px] lg:h-[335px] bg-[#212121]'>
                 </div>
             </div>
         </section>

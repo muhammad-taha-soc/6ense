@@ -14,7 +14,7 @@ import Contact from './components/Contact';
 function App() {
   return (
     <Layout>
-      <Hero />
+      <Hero />   
       <CouponSection />
       <About />
       <OurProduct />
