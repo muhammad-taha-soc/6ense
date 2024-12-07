@@ -6,12 +6,12 @@ import Card from './containers/Card'
 export default function OurProduct() {
     return (
         <section className="flex flex-col md:flex-row justify-between mt-32 md:my-28 md:text-left items-center md:items-center lg:w-[94%] w-full max-w-auto mx-auto">
-            <div className="flex flex-col justify-center md:px-6 md:items-start text-center md:text-left h-[500px] lg:h-[650px] md:w-[65%] p-6 mt-16 lg:mt-0 sm:p-0">
+            <div className="flex flex-col justify-center md:px-6 md:items-start text-center md:text-left w-full p-6 mt-16 lg:mt-0 sm:p-0">
                 <Separator text="our product" variant="dark" />
                 <h1 className="lg:text-6xl text-4xl mt-5 font-space font-medium">
                     First contact with 6ENSE. We are trasformin everithing into one secure digital system made from people.
                 </h1>
-                <div className='flex flex-row items-center justify-between w-full my-8'>
+                <div className='flex flex-col md:flex-row items-center justify-between w-full my-8'>
                     {[{ title: 'Totaly Supply', text: '9,63 Mld' }, { title: 'Totaly Supply', text: '9,63 Mld' }, { title: 'Market cap', text: '5 Mln' }].map((data, index) => (
                         <Card title={data.title} text={data.text} variant="light" />
                     ))}
