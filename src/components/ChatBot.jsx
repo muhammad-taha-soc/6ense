@@ -80,11 +80,11 @@ export default function ChatBot() {
   }, [messages]);
 
   return (
-    <section id="tutorial" className="text-white bg-black md:rounded-[64px] py-16">
+    <section id="tutorial" className=" py-16">
       <div className="md:text-left lg:w-[94%] w-full max-w-auto mx-auto">
         <div className="md:px-6 text-center md:text-left w-full p-6 mt-16 lg:mt-0 sm:p-0">
           {/* Separator */}
-          <Separator text="Tutorial" variant="light" />
+          <Separator text="Tutorial" variant="dark" />
           
           <h1 className="lg:text-6xl text-4xl mt-5 font-space font-medium">
             Interact with SAMA.
@@ -92,8 +92,8 @@ export default function ChatBot() {
         </div>
         
         {/* ChatBot Component */}
-        <div className="w-[400px] h-[500px] max-w-[95%] mx-auto mt-16 rounded-lg p-4 shadow-lg">
-          <div className="w-full h-full flex flex-col bg-[#212121] rounded-xl overflow-hidden">
+        <div className="w-[500px] h-[500px] max-w-[95%] mx-auto mt-16 bg-[#F1F1F1]  rounded-lg p-4 shadow-lg">
+          <div className="w-full h-full flex flex-col bg-[#F1F1F1] rounded-xl overflow-hidden">
             <div
               ref={chatLogRef}
               className="flex-grow overflow-y-auto p-4 space-y-4 scroll-smooth"
@@ -108,7 +108,7 @@ export default function ChatBot() {
                     className={`max-w-[80%] p-3 rounded-lg text-sm ${
                       message.sender === 'bot'
                         ? 'bg-[#4000FF] text-white' // Bot message background (purple)
-                        : 'bg-[#F1F1F1] text-black' // User message background (light gray)
+                        : 'bg-[#1C1C1C] text-white' // User message background (light gray)
                     }`}
                   >
                     {message.sender === 'bot' && <span className="font-bold">SAMA: </span>}
