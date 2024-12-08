@@ -6,7 +6,7 @@ export default function Stats() {
   return (
       <section className="mt-32 text-white bg-black md:rounded-[64px]">
           <div className=" md:text-left md:py-28  lg:w-[94%] w-full max-w-auto mx-auto">
-              <div className="md:px-6  text-center lg:text-left md:w-full p-6">
+              <div className="md:px-6  text-center md:text-left md:w-full p-6">
                   <Separator text="Stats" variant="light" />
                   <h1 className="lg:text-6xl text-4xl mt-5 font-space font-medium">
                       6ENSE IN NUMBERS
